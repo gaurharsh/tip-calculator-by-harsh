@@ -1,0 +1,67 @@
+
+  body{
+	  background-image: linear-gradient(120deg,#a8a8a8,#63c780);
+	  color:#FF0000;
+	
+  }
+
+  
+
+.center
+{
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
+    text-align: center;
+}
+input[type="number"]
+{
+	width:250px;
+	height:28px;
+	border-color:#eb7134;
+	color:#FF6347;
+	
+}
+input[type="number"]:hover
+{
+	background-color:#e0f3e4de;
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0;
+  color:#ff99cc;
+
+  
+}
+
+h2
+{
+	font-size:35px;
+	color:#f09e75;
+	color: hotpink;
+	 border: 1px solid red;
+    margin: 10px;
+    padding: 5px;
+	padding-top: 10px;
+padding-right: 5px;
+padding-bottom: 3px;
+padding-left: 2px;
+margin: 20px 10px 20px 10px;
+	
+}
+
+
+
+}
+label
+{
+	font-size:18 px;
+}

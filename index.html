@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>tip calculator by harsh</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <div class="center">
+      <h2>Tip calculator</h2>
+  <label>Amount</label>
+  <input type="number" id="amount"><br>
+  <br><label>Percentage</label>
+  <button onclick="decp()">-</button><input type="number" id="percent" value="5"><button onclick="incp()">+</button><br>
+   <br><label>No.of person<label>
+  <button onclick="decn()">-</button><input type="number" id="person" value="1"><button onclick="incn()">+</button><br/><br> 
+      <button onclick="Tip()">calculate</button>
+     <p>TIP(per person):</p> <p id="tip"></p>
+    <p>Total(per person):</p> <p id="total"></p>
+    </div>
+  </body>
+      <script>
+function Tip()
+{
+var a=parseInt(document.getElementById("amount").value);
+var p=parseInt(document.getElementById("percent").value);
+var n=parseInt(document.getElementById("person").value);
+let tip=(((a/100)*p))/n;
+let total=((((a/100)*p))+a)/n;
+document.getElementById("tip").innerHTML=tip.toFixed(2);
+document.getElementById("total").innerHTML=total.toFixed(2);
+}
+function incp()
+{
+var a=parseInt(document.getElementById("percent").value);
+let t=a+1;
+document.getElementById("percent").value=t;
+}
+function decp()
+{
+var a=parseInt(document.getElementById("percent").value);
+let t=a-1;
+if(t!=-1)
+{
+document.getElementById("percent").value=t;
+}
+}
+function incn()
+{
+var a=parseInt(document.getElementById("person").value);
+let t=a+1;
+document.getElementById("person").value=t;
+}
+function decn()
+{
+var a=parseInt(document.getElementById("person").value);
+let t=a-1;
+if(t!=-1)
+{
+document.getElementById("person").value=t;
+}
+}
+</script>
+</html>
